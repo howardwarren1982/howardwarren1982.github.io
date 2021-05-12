@@ -1,0 +1,92 @@
+
+/* Computer form 1023px to 1200px*/
+@media only screen and (max-width: 1170px) {
+  .templete-who-we-are{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .who-we-are-text{
+    max-width: 65ch;
+  }
+
+  .row{
+    max-width: 1000px;
+  }
+
+}
+
+/* Ipad,portrait mode form 767px to 1023px*/
+@media only screen and (max-width: 1140px) {
+  .even-columns{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+}
+/*-----------------------------------------------------------*/
+/* Sign up button fix*/
+@media only screen and (max-width: 822px) {
+  textarea {max-width:450px;}
+  footer img{height: 100px;}
+  .responsive-dropdown button{
+    font-size: 150%;
+  }
+
+  .responsive-dropdown{  display: block;}
+  .nav-list{display: none;}
+}
+
+/*-----------------------------------------------------------*/
+
+/* Ipad, form 480px to 767px*/
+@media only screen and (max-width: 612px) {
+  .who-we-are-pic img{
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  textarea,
+  .contact-me input {max-width:250px;}
+
+  .contact-me button {max-width:200px;}
+  .note{
+    font-size: 50%;
+    top: 210px;
+   }
+}
+
+@media only screen and (max-width: 280px) {
+  .logo-setup img{max-width: 100px;}
+  .templete-search-nav{
+    flex-direction: column;
+    gap:15px;
+  }
+
+  .who-we-are-pic img{
+    max-width: 100%;
+  }
+
+  .water-mark-number h1{
+    right: 157px;
+    bottom: 119px;
+  }
+
+  .contact-me button{
+    max-width: 100%;
+    max-height: auto;
+    font-size: 35%;
+  }
+
+  textarea,
+  .contact-me input {max-width:100%;}
+
+  .card-our-service{max-width: 100%;}
+
+
+  section{overflow: hidden;}
+}

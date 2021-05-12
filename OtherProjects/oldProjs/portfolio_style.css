@@ -1,0 +1,117 @@
+
+
+.container-fluid{
+margin-top: 1%;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 1%;
+text-align: center;
+background-image: url("cool-background.png");
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 5%;
+
+}
+
+.container-sm{
+  margin-bottom: 100px;
+
+}
+
+h1{
+text-align: center;
+}
+
+ main{
+ margin-left: 5%;
+ margin-right: 5%;
+
+}
+
+
+
+footer{
+max-height: 10%;
+
+}
+
+p{
+font-size:2em;
+text-align: left;
+text-indent: 5ch;
+max-width: 78ch;
+
+
+}
+
+img {
+  border-radius: 50%;
+    margin-top: 20px;
+
+
+}
+
+h2{
+font-size: 3em;
+margin-bottom: 15px;
+}
+
+
+
+#conFour td {border : 2px solid black;
+background : gray;
+width : 8em;
+height : 8em;
+border-radius : 70px;
+}
+
+@media screen and (max-width: 530px){
+  img{
+    height: 20%;
+    width: 50%;
+  }
+
+}
+
+
+/* Contact me form style  */
+
+div.elem-group {
+  margin: 40px 0;
+}
+
+label {
+  display: block;
+  font-family: 'Aleo';
+  padding-bottom: 4px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Aleo';
+  width: 500px;
+  padding: 8px;
+}
+
+textarea {
+  height: 250px;
+}
+
+button {
+  height: 50px;
+  background: green;
+  color: white;
+  border: 2px solid darkgreen;
+  font-size: 1.25em;
+  font-family: 'Aleo';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}

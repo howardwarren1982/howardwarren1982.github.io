@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css"  href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css"  href="resources/css/queries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Howard's Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="row">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="OtherProjects/unemplymentSite/site.html" target="_blank">Site cloning excersise</a>
+            <a href="OtherProjects/oldProjs/index.html" target="_blank">Previous Portfolio</a>
+            <a href="OtherProjects/oldProjs/oldIndex.html" target="_blank">First Portfolio</a>
+            </div>
+
+            <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Other Projects </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about-me-section">
+      <div class="row templete-about-me">
+          <div class="picture-box animate__animated animate__fadeInLeft animate__slower">
+            <img src="resources/img/profilepic2__2_-removebg-preview.png" alt="picture of Howard">
+          </div>
+          <div class="text-box">
+            <h3>Hello, my name is Howard. <br> My main focus is the front-end. <br> I build responsive websites using HTML, CSS and JavaScript. Please see some of my projects below.</h3>
+          </div>
+      </div>
+    </section>
+
+    <section class="section-projects">
+      <div class="row project-description">
+        <h1>Projects</h1>
+        <h3>Below are three recent projects. <br><br>Left - Site built from a PSD (https://blazrobar.com/). <br>Middle - Mock restaurant site. <br>Right - Starting template for a local landscaping business.   </h3>
+      </div>
+
+      <div class="row">
+          <ul class="projects-showcase">
+            <li class="project-photo">
+                <a href="MainProjects/psdtohtml1/index.html" target="_blank"><img src="MainProjects/psdtohtml1/psdtohtml1small.png" alt="PSD to HTML/CSS" > </a>
+            </li>
+            <li class="project-photo">
+                <a href="MainProjects/omnifoodContents/index_omni.php" target="_blank"><img src="resources/img/omnifood.png" alt="Omnifood website project"></a>
+            </li>
+            <li class="project-photo">
+                <a href="MainProjects/DavisLawnCareProject/index.html" target="_blank"><img src="resources/img/Landscape.png" alt="Landscape templete project" > </a>
+            </li>
+          </ul>
+      </div>
+      <h2 style="text-align:center;margin-top:200px;">Vanilla Javascript App</h2>
+      <div class="input-player">
+        Look up a sports player:
+        <input id="search-request" type="text" />
+        <button class="search-button">Serach</button>
+      </div>
+      <div class="sports-player-container"></div>
+    </section>
+
+    <section class="section-contact-me">
+      <div class="row templete-contact-me">
+
+        <div class="contact-form-box">
+          <form id="fs-frm" class="contact-form" name="simple-contact-form" accept-charset="utf-8" action="mailer-new.php" method="post">
+
+            <div class="row">
+              <?php
+              if($_GET['success']== 1){
+                echo "<div class=\"form-messages success\">
+                  Thank you! Your message has been sent
+                </div>";
+              }
+              if($_GET['success']== -1){
+                echo "<div class=\"form-messages error\">
+                  !Oops! Something went wrong. Please try agian
+                </div>";
+              }
+              ?>
+            </div>
+
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Name</label>
+                <input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required=""> <br>
+                <label for="email-address">Email</label>
+                <input type="email" name="email" id="email-address" placeholder="email@domain.tld" required=""> <br>
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Enter your message" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+            <input type="submit" value="Submit">
+          </form>
+
+        </div>
+        <div class="contact-info">
+          <h1>Contact Me</h1>
+          <h3>Email: howardwarren@hotmail.com</h3>
+          <a href="https://www.linkedin.com/in/howard-warren-a9388885" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>

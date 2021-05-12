@@ -1,0 +1,30 @@
+.container-lg{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.project-card {
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 0px;
+    background-color: #e0e0e0;
+    color: #32475c;
+    padding-bottom: 35px;
+}
+
+.button {
+    position: absolute;
+    margin-top: 0px;
+    border-radius: 0px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .button {
+      position: relative;
+
+  
+}

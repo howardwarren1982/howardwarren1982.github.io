@@ -1,0 +1,276 @@
+body{
+  font-family: 'Roboto';
+  overflow: scroll;
+}
+
+.claimBar,
+.learnMoreBar,
+.pictureCarocel{
+  margin-bottom: 60px;
+}
+
+
+
+.headerOneTemplete{
+  display: grid;
+  grid-template-columns: 10% 40% 20% 30%;
+  grid-template-areas: ". leftSide . rightSide"
+}
+
+.learnMoreBar{
+  display: grid;
+  grid-template-columns: 9% auto;
+  grid-template-areas: ". mainSide"
+}
+
+.pictureCarocel{
+  display: grid;
+  grid-template-columns: 9% 82% 9%;
+  grid-template-areas: ". pictureSide ."
+}
+
+.carousel-inner img {
+    width: 1500px;
+    height: 500px;
+  }
+
+.learnCards{
+  grid-area: mainSide;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.inforCard{
+align-items: center;
+display: flex;
+text-align: center;
+flex-direction: column;
+margin: 5px;
+padding: 5px;
+font-size: 20px;
+}
+
+
+
+.claimsNavTemplete{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-areas: ". leftSideclaims rightSideclaims .";
+}
+
+.leftSideclaims{
+  grid-area: leftSideclaims;
+}
+
+.rightSideclaims{
+  grid-area: rightSideclaims;
+}
+
+.officialSiteLink{
+  font-size: 10px;
+  font-family: 'Roboto';
+}
+
+
+.leftSide{
+  grid-area: leftSide;
+
+}
+
+.rightSide{
+  grid-area: rightSide;
+
+}
+
+.rightSide td{
+  margin-right: 15px;
+  border-right: 1px solid #fff;
+  text-align: right;
+  padding: 5px;
+
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.container-fluid{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.collapse{
+  text-align: right;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+li{
+  padding: 8px;
+}
+
+.claimsNavTemplete a{
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 13px;
+  margin-left: 1px;
+}
+
+.small-screen-claim-nav{display: none;}
+
+.container-fluid-closing{
+  display: grid;
+  grid-template-columns: .4fr 1fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: .03fr 1fr;
+  grid-template-areas:
+    ". header header header sideheader ."
+    ". home tools help statewide .";
+}
+
+ul.navbar-nav{
+  margin-left: 30%;
+}
+
+.headerclose{
+  grid-area: header;
+}
+
+.sideheader{
+  grid-area: sideheader;
+}
+
+.stateWide{
+  grid-area: statewide;
+}
+
+.help{
+  grid-area: help;
+}
+
+.tools{
+  grid-area: tools;
+}
+
+.home{
+  grid-area: home;
+}
+
+
+.closingLinks{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.closingLinks div a {
+  color: white;
+}
+
+.closingLinks div td{
+  padding-right: 50px;
+}
+
+.closingLinks li, .closingLinks p{
+  padding-bottom: 0px;
+  margin-bottom: -1px;
+}
+
+.container-fluid-footer{
+  margin-left: 9%;
+  margin-right: 9%;
+  display: flex;
+  flex-direction: row;
+}
+
+.second-box{
+  justify-content:center;
+}
+
+footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  ul.respove-1500.navbar-nav{
+    display: block;
+  }
+}
+
+
+
+@media screen and (max-width: 1268px) {
+  .headerOneTemplete{
+    display: grid;
+    grid-template-columns: 10% 40% 10% 30%;
+    grid-template-areas: ". leftSide . rightSide";
+  }
+  .learnCards{
+    display: flex;
+    flex-direction: column;
+  }
+  .gov-link{display: none;}
+}
+
+@media screen and (max-width: 900px) {
+   .headerOneTemplete{
+     display: flex;
+     flex-direction: column;
+   }
+}
+
+
+@media screen and (max-width: 1199px) {
+   .container-fluid-footer{
+     flex-direction: column-reverse;
+   }
+  }
+
+
+  @media screen and (max-width: 591px) {
+     .container-fluid-closing,
+     .claimsNavTemplete{
+       display: flex;
+       flex-direction: column;
+     }
+
+     .remove-at-377{
+       display: none;
+     }
+     .rightSide-table tr td{
+       display: block;
+       border: 0px;
+     }
+
+     table.rightSide-table{
+      margin-left: 40%;
+     }
+
+    }
+
+    @media screen and (max-width: 400px) {
+      .small-screen-claim-nav{
+        display: flex !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .small-screen-claim-nav div button{
+        margin-left: 5px;
+      }
+
+      .claimsNavTemplete{display: none;}
+
+      }

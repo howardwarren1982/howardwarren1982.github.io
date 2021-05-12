@@ -1,0 +1,176 @@
+
+/* Computer form 1023px to 1200px*/
+@media only screen and (max-width: 1210px) {
+
+  section{
+      padding: 60px 0;
+  }
+}
+
+/* Ipad,portrait mode form 767px to 1023px*/
+@media only screen and (max-width: 1023px) {
+
+}
+/*-----------------------------------------------------------*/
+
+@media only screen and (max-width: 1147px) {
+
+  .templete-about-me{
+    flex-direction: column;
+  }
+
+  .intro-text{
+    display: none;
+  }
+
+  .picture-box img{
+    max-height: 650px;
+    position: relative;
+}
+
+.picture-box{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.text-box{
+  max-width: 44ch;
+  line-height: 1.65;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.projects-showcase{
+  flex-direction: column;
+  padding-left: 25%;
+  padding-right: 15%;
+}
+
+.projects-showcase li{
+  width: 75%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.templete-contact-me{
+  flex-direction: column-reverse;
+  padding-left: 30%;
+}
+
+.project-description h3{display: none;}
+.project-description h1{text-align: center;}
+
+
+
+
+}
+
+/*-----------------------------------------------------------*/
+
+/* Ipad, form 480px to 767px*/
+@media only screen and (max-width: 767px) {
+
+  body{
+    font-size: 80%;
+  }
+
+  .picture-box img{
+    max-height: 350px;
+    padding-left: 30px;
+  }
+
+  .project-description{
+    line-height: 1.2;
+    max-width: 55ch;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 500px){
+  .project-description.row{
+    padding-left: 20px;
+  }
+
+  .sports-player-container {
+    max-height: 800px;
+    max-width: 100%;
+
+  }
+  .player-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .picture-box img{
+    max-height: 250px;
+    padding-right: 80px;
+  }
+
+  .contact-info h1{
+    font-size: 160%;
+  }
+
+  .contact-info h3{
+    font-size: 85%;
+  }
+
+  .picture-box{
+    padding: 0px;
+  }
+
+  .text-box{
+    max-width: 44ch;
+    line-height: 1.2;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+  section{
+      padding: 40px 0;
+  }
+
+  .section-contact-me{
+    margin-left: -90px;
+    overflow: hidden;
+  }
+
+  .picture-box img{
+    max-width: 110%;
+    padding-left: 50px;
+  }
+
+  .contact-info{
+    font-size: 90%;
+    padding-left: 10px;
+  }
+  .about-me-section{overflow: hidden;}
+
+  .row{max-width: 450px;}
+
+  .project-description h1{font-size: 200%;}
+
+}
+
+@media screen and (max-width: 334px) {
+  .text-box h3{
+    font-size: 60%;
+    max-width: 100%;
+  }
+
+  .about-me-section{
+    padding-bottom: 50px;
+  }
+}
