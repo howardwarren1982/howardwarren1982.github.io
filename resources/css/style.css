@@ -1,7 +1,7 @@
 /* variables */
 :root{
   --background-contact: #fff;
-  --text-color-contact: #fdb400;
+  --text-color-contact: #28404c;
   --background-projects: #f1f1f1;
   --background-nav: rgba(14, 17, 9, 0.58);
   --background-yellow: rgb(149, 149, 149);
@@ -85,6 +85,20 @@ nav{
   padding: 16px;
 }
 
+.blinking-cursor{
+  position: fixed;
+  right: 1190px;
+  bottom: 570px;
+  -webkit-animation-name: blinking;
+          animation-name: blinking;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
 header{
   background-image: url('img/Group 4.jpg');
   background-position: center;
@@ -92,6 +106,19 @@ header{
   background-size: cover;
   padding-bottom: 800px;
 }
+
+/*animation*/
+
+@-webkit-keyframes blinking {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes blinking {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 /*----------------------------------------*/
 /*Section about me*/
 /*----------------------------------------*/
@@ -120,7 +147,7 @@ header{
   background-image: url('img/test7.jpg');
   background-size: cover;
   color: black;
-  height: 600px;
+  height: 1050px;
   padding-top: 50px;
 }
 
@@ -142,8 +169,9 @@ header{
 }
 
 .projects-showcase P{
-   opacity: 1;
+  color: #fff;
 }
+
 
 .projects-showcase li{
   display: block;

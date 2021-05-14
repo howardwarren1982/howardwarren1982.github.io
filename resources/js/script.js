@@ -11,6 +11,17 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 
+//cursor fade out
+// const cursor = document.querySelector('.blinking-cursor')
+// window.onscroll = function(){fadeCursor()}
+//
+// function fadeCursor() {
+//   if(document.body.scrollTop > 499 || document.documentElement.scrollTop > 499){
+//     cursor.style.display = 'none';
+//   }else{
+//     cursor.style.display = 'block';
+//   }
+// }
 
 
 
