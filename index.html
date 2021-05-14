@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <header>
     <nav>
       <div class="row">
@@ -31,36 +32,27 @@
   </header>
 
   <section class="about-me-section">
-    <div class="row templete-about-me">
-      <div class="picture-box animate__animated animate__fadeInLeft animate__slower">
-        <img src="resources/img/profilepic2__2_-removebg-preview.png" alt="picture of Howard">
-      </div>
-      <div class="text-box">
-        <h3>Hello, my name is Howard. <br> My main focus is the front-end. <br> I build responsive websites using HTML, CSS and JavaScript. Please see some of my projects below.</h3>
-      </div>
+    <div class="row">
+      <h2>Some of my resent projects</h2>
+      <ul class="projects-showcase">
+        <li class="project-photo">
+          <a href="MainProjects/psdtohtml1/index.html" target="_blank"><img src="MainProjects/psdtohtml1/psdtohtml1small.png" alt="Landscape templete project"> </a>
+          <p>PSD TO HTML, CSS AND JS</p>
+        </li>
+        <li class="project-photo">
+          <a href="MainProjects/omnifoodContents/index_omni.php" target="_blank"><img src="resources/img/omnifood.png" alt="Omnifood website project"></a>
+          <p>WEB COURSE FINAL PROJECT</p>
+        </li>
+        <li class="project-photo">
+          <a href="MainProjects/DavisLawnCareProject/index.html" target="_blank"><img src="resources/img/Landscape.png" alt="Landscape templete project"> </a>
+          <p>SITE THAT I DESIGNED AND BUILT</p>
+        </li>
+      </ul>
     </div>
   </section>
 
   <section class="section-projects">
-    <div class="row project-description">
-      <h1>Projects</h1>
-      <h3>Below are three recent projects. <br><br>Left - Site built from a PSD (https://blazrobar.com/). <br>Middle - Mock restaurant site. <br>Right - Starting template for a local landscaping business. </h3>
-    </div>
-
-    <div class="row">
-      <ul class="projects-showcase">
-        <li class="project-photo">
-          <a href="MainProjects/psdtohtml1/index.html" target="_blank"><img src="MainProjects/psdtohtml1/psdtohtml1small.png" alt="Landscape templete project"> </a>
-        </li>
-        <li class="project-photo">
-          <a href="MainProjects/omnifoodContents/index_omni.php" target="_blank"><img src="resources/img/omnifood.png" alt="Omnifood website project"></a>
-        </li>
-        <li class="project-photo">
-          <a href="MainProjects/DavisLawnCareProject/index.html" target="_blank"><img src="resources/img/Landscape.png" alt="Landscape templete project"> </a>
-        </li>
-      </ul>
-    </div>
-    <h2 style="text-align:center;margin-top:200px;">Vanilla Javascript App</h2>
+    <h2 style="text-align:center">Vanilla Javascript App</h2>
     <div class="input-player">
       What sports player would you like to look up:
       <input id="search-request" type="text" />
@@ -70,48 +62,17 @@
   </section>
 
   <section class="section-contact-me">
-    <div class="row templete-contact-me">
-
-      <div class="contact-form-box">
-        <form id="fs-frm" class="contact-form" name="simple-contact-form" accept-charset="utf-8" action="mailer-new.php" method="post">
-
-          <!-- <div class="row">
-              <?php
-              if($_GET['success']== 1){
-                echo "<div class=\"form-messages success\">
-                  Thank you! Your message has been sent
-                </div>";
-              }
-              if($_GET['success']== -1){
-                echo "<div class=\"form-messages error\">
-                  !Oops! Something went wrong. Please try agian
-                </div>";
-              }
-              ?>
-            </div> -->
-
-          <fieldset id="fs-frm-inputs">
-            <label for="full-name">Name</label>
-            <input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required=""> <br>
-            <label for="email-address">Email</label>
-            <input type="email" name="email" id="email-address" placeholder="email@domain.tld" required=""> <br>
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="Enter your message" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          </fieldset>
-          <input type="submit" value="Submit">
-        </form>
-
-      </div>
-      <div class="contact-info">
+    <div class="row">
+      <div class="contact-info center">
         <h1>Contact Me</h1>
         <h3>Email: howardwarren@hotmail.com</h3>
         <a href="https://www.linkedin.com/in/howard-warren-a9388885" target="_blank">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
+        <a href="#">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
       </div>
-
-
     </div>
 
   </section>

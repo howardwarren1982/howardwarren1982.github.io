@@ -1,7 +1,10 @@
 /* variables */
 :root{
-  --background-blue: #1f203a;
-  --background-yellow: #fceb21;
+  --background-contact: #fff;
+  --text-color-contact: #fdb400;
+  --background-projects: #f1f1f1;
+  --background-nav: rgba(14, 17, 9, 0.58);
+  --background-yellow: rgb(149, 149, 149);
 }
 
 
@@ -26,15 +29,20 @@ html{
   margin: 0 auto 0 auto;
 }
 
-section{
-    padding: 80px 0;
+.center{
+  justify-content: center;
+  text-align: center;
+}
+
+h2{
+  color: var(--text-color-contact);
 }
 
 /*----------------------------------------*/
 /*Nav Bar*/
 /*----------------------------------------*/
 nav{
-  background-color: var(--background-blue);
+  background-color: var(--background-nav);
   color: white;
 }
 
@@ -45,7 +53,7 @@ nav{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.78);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -77,53 +85,43 @@ nav{
   padding: 16px;
 }
 
-
+header{
+  background-image: url('img/Group 4.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 800px;
+}
 /*----------------------------------------*/
 /*Section about me*/
 /*----------------------------------------*/
-.templete-about-me{
-  display: flex;
-}
+
 
 .about-me-section{
-  background-color: var(--background-yellow);
-  color: var(--background-blue);
-  padding-bottom: 200px;
+  color: white;
+}
+
+.about-me-section h2{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .picture-box img{
-  max-height: 550px;
+  max-width: 100%;
 }
 
-.text-box{
-  align-items:right;
-  text-align: center;
-  max-width: 44ch;
-  line-height: 2;
-  margin-left: 120px;
-  padding-top: 75px;
-
-}
-
-/* Introduction Text*/
-.intro-text{
-  color: white;
-  font-size: 3rem;
-}
-
-.greet{}
-.im{display: none;}
-.howard{display: none;}
 
 
 /*----------------------------------------*/
 /*Section Projects*/
 /*----------------------------------------*/
 .section-projects{
-  background-color: var(--background-blue);
-  color: white;
-  padding-top: 100px;
-  padding-bottom:200px;
+  background-image: url('img/test7.jpg');
+  background-size: cover;
+  color: black;
+  height: 600px;
+  padding-top: 50px;
 }
 
 .project-description{
@@ -138,11 +136,16 @@ nav{
   list-style: none;
   width: 100%;
   display: flex;
-  gap: 50px;
+  justify-content: bottom;
+  gap:40px;
+  padding-bottom: 200px;
+}
+
+.projects-showcase P{
+   opacity: 1;
 }
 
 .projects-showcase li{
-  margin-top: 50px;
   display: block;
     width: 45%;
 }
@@ -174,41 +177,22 @@ nav{
 /*Section Contact me*/
 /*----------------------------------------*/
 
-.templete-contact-me{
-  display: flex;
-  gap: 150px;
-}
 
 .section-contact-me{
-  background-color: var(--background-yellow);
-  color: var(--background-blue);
+  background-color: var(--background-contact);
+  color: var(--text-color-contact);
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.section-contact-me a{
+  margin-left: 50px;
 }
 
 .contact-form{
   max-width: 500px;
 }
 
-fieldset{border: none;}
-
-input[type=text],
-input[type=email],
-input[type=text]:active,
-input[type=email]:active,
-textarea{
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 2px solid var(--background-blue);
-  margin-bottom: 20px;
-  background-color: var(--background-yellow);
-}
-
-input[type=submit]{
-  margin-top: 20px;
-  color: white;
-  background-color: var(--background-blue);
-  padding:8px
-}
 
 .contact-info ion-icon{
 font-size: 300%;
@@ -227,9 +211,9 @@ transition: 0.3s;
   margin-top: 0px;
   font-size: 3rem;
 }
-
+/*------------------------------------------*/
 /* Player look up app */
-
+/*------------------------------------------*/
 .sports-player-container {
   max-height: 800px;
   max-width: 540px;
@@ -310,7 +294,7 @@ transition: 0.3s;
 .input-player {
   margin-bottom: 30px;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 50px;
 }
 
