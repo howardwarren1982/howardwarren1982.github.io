@@ -1,0 +1,480 @@
+/* variables */
+:root{
+  --social-search-bar-color: #A88C95;
+  --nave-bar-color: #97455F;
+  --our-service-color: #F5F5F5;
+  --read-more-button: #6A3144;
+  --our-service-text-color:#523827
+}
+
+
+/*Basic setup*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  color: black;
+  font-family: 'Open sans', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+button:hover,
+form button[type='submit']:hover{
+  background-color: #6c3043;
+}
+
+.note{
+  position: fixed;
+  background-color: rgba(223, 223, 223, 0.51);
+  top: 60px;
+  font-size: 80%;
+  color: rgba(0, 0, 0, 0.75)
+
+}
+
+/* Reusable*/
+.row{
+  max-width: 1140px;
+  margin: 0 auto 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.even-columns{display: flex;}
+.even-columns > * {width: 100%;}
+
+.center{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+section{
+    padding: 0px 0;
+}
+
+a:active,
+a:visited,
+a{
+  text-decoration: none;
+}
+
+.smooth-transition{transition: .4s;}
+
+
+/*Drop down button style*/
+
+.box-dropdown{
+  position: relative;
+}
+
+.box-dropdown li a{
+
+}
+
+.hidden-dropdown{
+  display: none;
+}
+
+.res-hidden-dropdown{
+  display: none;
+}
+
+.box-dropdown{
+  overflow: hidden;
+  max-height: 140px;
+  position: absolute;
+}
+
+.box-dropdown li{
+  display: block !important;
+  background-color: rgba(255, 255, 255, 0.57);
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/*-------------------------------*/
+/*Search nav bar*/
+/*-------------------------------*/
+nav{
+  padding-top:15px;
+  padding-bottom: 10px;
+
+}
+.search-nav-bar{background-color: var(--social-search-bar-color);}
+
+.templete-search-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links li{
+  display: inline-block;
+}
+
+.social-links li:first-child{
+  background-color: #0E76A8;
+}
+.social-links li:nth-child(2){
+  background-color: #00ACEE;
+}
+
+.social-links li:nth-child(3){
+  background-color: #C8232C;
+}
+
+.social-links li:nth-child(4){
+  background-color: #DB4A39;
+}
+.social-links li:nth-child(5){
+  background-color: #EE802F;
+  color: white;
+}
+
+/*Hover effect*/
+.social-links li:first-child:hover{
+  background-color: #084b6b;
+}
+.social-links li:nth-child(2):hover{
+  background-color: #0978a3;
+}
+
+.social-links li:nth-child(3):hover{
+  background-color: #9c1a21;
+}
+
+.social-links li:nth-child(4):hover{
+  background-color: #a23023;
+}
+.social-links li:nth-child(5):hover{
+  background-color: #c2631d;
+  color: white;
+}
+
+.social-links ion-icon[name="logo-rss"]{
+  color: white;
+}
+
+/*Search nav bar social icons*/
+.social-links ion-icon{
+  font-size: 80%;
+  color: var(--read-more-button);
+}
+.social-links li{
+  background-color: red;
+  border-radius: 75%;
+  padding: 3px;
+
+}
+
+/*form bar stylings */
+
+.search-container button[type=submit]{
+  background-color:#BE5778;
+  color: white;
+  font-size: 70%;
+  float: left;
+  border-style: none;
+  border: 1px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 2px;
+}
+
+.search-container input[type=text] {
+  float: left;
+  max-width:100%;
+  max-height: 20px;
+  box-sizing: border-box;
+  font-size: 70%;
+  border-style: none;
+  border: 1px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding-left: 3px;
+  padding: 5px;
+}
+
+/*Full page form stylings*/
+input[type=text]::-moz-placeholder {
+  font-size: 60%;
+}
+
+input[type=text]:-ms-input-placeholder {
+  font-size: 60%;
+}
+
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder {
+  font-size: 70%;
+  padding-left: 10px;
+
+}
+
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder {
+  font-size: 70%;
+  padding-left: 10px;
+
+}
+
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 70%;
+  padding-left: 10px;
+
+}
+
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 70%;
+  padding-left: 10px;
+
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=number]::placeholder,
+textarea::placeholder {
+  font-size: 70%;
+  padding-left: 10px;
+
+}
+
+/*-------------------------------*/
+/*Logo*/
+/*-------------------------------*/
+
+.logo-header{
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.logo-setup img{
+  margin: 0 auto;
+  display: block;
+}
+
+/*-------------------------------*/
+/*Site nav bar*/
+/*-------------------------------*/
+.site-nav-bar{
+  background-color: var(--nave-bar-color);
+  position:sticky;
+  top: 1px;
+  z-index: 999;
+
+}
+
+
+.site-nav-bar ul{
+  list-style: none;
+}
+
+.site-nav-bar ul li{
+  display: inline-block;
+  padding-left: 24px;
+  transition: .3s;
+}
+
+.site-nav-bar ul li:hover{transform: scale(1.1);}
+
+.site-nav-bar ul li a{
+  color: white;
+  font-weight: bolder;
+  font-size: 70%;
+}
+
+.nav-list li a{
+  transition: .3s;
+}
+
+.nav-list li a:hover{
+  background-color:#672c3f;
+}
+
+/*responsive nav bar setup*/
+.responsive-dropdown{display:none;}
+.responsive-dropdown button{
+  background-color:var(--nave-bar-color);
+  color: white;
+  border: none;
+
+}
+
+.res-dropdown-content{transition: 2s;}
+
+.res-dropdown-content a{
+  display: block;
+  color: white;
+}
+
+/*-------------------------------*/
+/*Banner Section*/
+/*-------------------------------*/
+
+.section-banner {
+  overflow: hidden;
+}
+
+.section-banner img{
+  max-width: 1600px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*-------------------------------*/
+/*Who we are section*/
+/*-------------------------------*/
+.templete-who-we-are{
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+
+.who-we-are-text{
+  padding-right: 45px;
+  font-size: 90%;
+  line-height: 27px;
+}
+
+.who-we-are-text h1{font-weight: lighter;}
+
+
+/*-------------------------------*/
+/*Our service section*/
+/*-------------------------------*/
+.section-our-service{
+  padding-top: 40px;
+}
+
+.header-our-service{
+  margin-bottom: 145px;
+}
+
+.section-our-service{
+  background-color: var(--our-service-color);
+}
+
+.header-our-service h1{
+  color: var(--read-more-button);
+  font-weight: 600;
+}
+
+.card-row{
+  gap:110px;
+}
+
+.top-row{margin-bottom: 100px;}
+/*Service cards*/
+.card-our-service{
+  max-width: 310px;
+  max-height: 310px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 37px;
+  transition: .5s;
+}
+
+.card-our-service:hover{
+  transform: scale(1.1);
+  background-color: white;
+}
+
+
+
+.water-mark-number h1{
+  font-size: 500%;
+  color: rgba(82, 56, 39, 0.11);
+  font-weight: bold;
+  position:absolute;
+  bottom: 92px;
+  right: 205px;
+}
+
+.card-text{
+  color: var(--our-service-text-color);
+  font-size: 800;
+  padding-left: 53px;
+}
+
+.card-text h3{
+  padding-left: 15px;
+  padding-bottom: 37px;
+  text-align: left;
+}
+
+.card-text p{
+  text-align: left;
+  font-size: 70%;
+  line-height: 29px;
+  max-width: 34ch;
+  max-height: 95px;
+  overflow:hidden;
+}
+
+/*-------------------------------*/
+/*Contact section*/
+/*-------------------------------*/
+
+.section-contact{
+  background-image: url('img/BG placeholder.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 67px;
+  padding-top: 67px;
+}
+
+.header-contact{
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 155%;
+  margin-bottom: 52px;
+  color: #fff;
+}
+
+
+.contact-me input{
+  margin-bottom: 12px;
+}
+
+.contact-me input[type="text"],
+.contact-me input[type="email"],
+.contact-me input[type="number"]{
+  width: 406px;
+}
+
+textarea::-moz-placeholder{padding-top: 20px;}
+
+textarea:-ms-input-placeholder{padding-top: 20px;}
+
+textarea::placeholder{padding-top: 10px;}
+
+.contact-me button{
+  margin-top: 15px;
+  font-size: 105%;
+  font-weight: bold;
+  background-color: #97455F;
+  color: white;
+  padding: 12px 53px;
+  border-radius: 50px;
+  border: none;
+  transition: .3s;
+}
+
+
+
+/*-------------------------------*/
+/*footer section*/
+/*-------------------------------*/
+
+footer{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
