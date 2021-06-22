@@ -1,0 +1,104 @@
+@import "variables";
+
+$basic-color: #a5a5a5;
+$standard-color: #f26c4f;
+$premium-color: #ffc038;
+
+.our-packages {
+  margin-top: 80px;
+  margin-bottom: 170px;
+
+  @include leftArrowSetup(13px, 0px, 0px, -56px);
+}
+
+.pay-data {
+  margin: 0 auto 0 auto;
+}
+
+.pay-data td {
+  border-bottom: solid 1px #ffbf37;
+  border-right: solid 1px #ffbf37;
+}
+
+.basic {
+  color: $basic-color;
+}
+
+.standard {
+  color: $standard-color;
+}
+
+.premium {
+  color: $premium-color;
+}
+
+tr,
+td {
+  font-size: 1rem;
+  padding: 18px 50px;
+}
+
+th {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+td:nth-child(3) {
+  border-right: 0px !important;
+}
+
+.table-bottem {
+  border-bottom: 0px !important;
+  font-size: 170%;
+  padding-top: 65px;
+
+  &:nth-child(1) {
+    color: $basic-color;
+  }
+
+  &:nth-child(2) {
+    color: $standard-color;
+  }
+
+  &:nth-child(3) {
+    color: $premium-color;
+  }
+}
+
+.basic-order,
+.standard-order,
+.premium-order {
+  padding: 19px 40px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 75%;
+  color: #fff;
+  font-weight: 500;
+
+  &:hover {
+    color: black;
+    transform: scale(1.2);
+  }
+}
+
+.basic-order {
+  background-color: $basic-color;
+}
+
+.standard-order {
+  background-color: $standard-color;
+}
+.premium-order {
+  background-color: $premium-color;
+}
+
+.resposive-table {
+  display: none;
+}
+
+.resposive-table ul {
+  margin-bottom: 70px;
+  border-bottom: 1px solid $premium-color;
+}

@@ -1,0 +1,186 @@
+/*-------------------------- */
+/*Section Hero*/
+/*-------------------------- */
+
+.section-hero {
+  background-color: var(--primary-color);
+  padding-bottom: 50px;
+}
+
+/*Nav Bar*/
+
+nav {
+  max-width: 1025px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  gap: 172px;
+  padding-top: 75px;
+  margin-bottom: 75px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  color: var(--second-color);
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.link-list ul li {
+  padding-bottom: 10px;
+}
+
+.logo-side h2 {
+  font-size: 130%;
+}
+
+.logo-side span {
+  font-weight: bolder;
+  color: #fff;
+  border: 3px solid #fff200;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 3px;
+}
+
+.link-list {
+  display: flex;
+  gap: 45px;
+}
+
+.link-list > *:hover,
+.link-list > *:focus,
+.link-list ul li a:hover {
+  color: #fff;
+}
+
+/*Responsive Nave*/
+
+.responsive-nave-bar {
+  display: none;
+  overflow-y: hidden;
+  height: 70px;
+  transition: 3s;
+}
+
+.responsive-nave-bar:hover,
+.responsive-nave-bar:focus {
+  overflow-y: hidden;
+  height: auto;
+}
+
+.responsive-button li {
+  list-style: none;
+}
+
+.res-drop-down-items {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.res-drop-down-items li {
+  margin-top: 10px;
+}
+
+/*hero */
+
+.templete-hero {
+  display: flex;
+  gap: 55px;
+}
+
+.hero-text {
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.hero-text h1 {
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  max-width: 51ch;
+  max-height: 290px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.hero-text button {
+  background-color: var(--second-color);
+  color: #fff;
+  font-size: 80%;
+  padding: 15px 22px;
+  border: none;
+  margin-top: 10px;
+}
+
+.hero-text button:hover,
+.hero-text button:focus {
+  background-color: var(--second-color-hover);
+}
+
+.carosel-window {
+  width: 630px;
+  height: 425px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.carosel-window img {
+  max-width: 601px;
+  max-height: 365px;
+}
+
+.slide2 img {
+  margin-left: 70px;
+  margin-right: 50px;
+  margin-top: 35px;
+}
+
+.slide3 img {
+  margin-left: 330px;
+  margin-right: 200px;
+  margin-top: 36px;
+}
+
+.controls {
+  display: flex;
+  gap: 5px;
+  margin: 0 45%;
+}
+
+.controls a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #949494;
+}
+
+.controls a:hover,
+.controls a:focus {
+  background-color: #fff;
+}
+
+.slide1 {
+  position: relative;
+  padding-top: 65px;
+}
+.cell-pic {
+  position: absolute;
+  left: 420px;
+  bottom: 30px;
+}
+
+.pic-rail {
+  width: 100%;
+  display: flex;
+  -webkit-animation-name: auto-scroll;
+  animation-name: auto-scroll;
+  -webkit-animation-duration: 22s;
+  animation-duration: 22s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}

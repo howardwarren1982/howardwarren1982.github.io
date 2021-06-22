@@ -1,0 +1,17 @@
+/* Buttons*/
+
+.btn-primary {
+  background-color: var(--primary-color);
+  font-size: 63%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn-mid-size {
+  padding: 18px 40px;
+}

@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #ffc038;
+  --primary-color-hover: #9f7926;
+  --second-color: #464646;
+  --second-color-hover: #1c1b1b;
+
+  --text-color: #fdfcfc;
+  --second-text-color: #464646;
+
+  --main-font: "Roboto", "Arial", sans-serif;
+  --second-font: "Source Sans Pro", "Arial", sans-serif;
+
+  --font-size: 20px;
+  --font-weight: 300;
+
+  --feature-card-hover: #fbc73a;
+}
+
+/*-------------------------- */
+/*Mixins*/
+/*-------------------------- */
+
+@mixin righArrowSetup($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+  .arrow-span {
+    position: relative;
+  }
+
+  .right-arrow {
+    position: absolute;
+    bottom: $bottom;
+    top: $top;
+    right: $right;
+    left: $left;
+  }
+}
+
+@mixin leftArrowSetup($top: 0px, $right: 0px, $bottom: 0px, $left: 0px) {
+  .arrow-span {
+    position: relative;
+  }
+
+  .left-arrow {
+    position: absolute;
+    bottom: $bottom;
+    top: $top;
+    right: $right;
+    left: $left;
+  }
+}

@@ -1,0 +1,37 @@
+/*animation*/
+
+@-webkit-keyframes auto-scroll {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  25% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    transform: translate3d(-200%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-300%, 0, 0);
+  }
+}
+
+@keyframes auto-scroll {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  20% {
+    transform: translate3d(0%, 0, 0);
+  }
+  40% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  60% {
+    transform: translate3d(-200%, 0, 0);
+  }
+  80% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-0%, 0, 0);
+  }
+}

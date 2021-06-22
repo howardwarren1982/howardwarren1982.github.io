@@ -1,0 +1,77 @@
+.row {
+  max-width: 1025px;
+  margin: 0 auto 0 auto;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.even-columns {
+  display: flex;
+}
+.even-columns > * {
+  width: 100%;
+}
+
+section {
+  padding: 10px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-rev-col {
+  display: flex;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+  /*Reusable*/
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-rev-col {
+    flex-direction: column-reverse;
+  }
+}
+
+// Mixins
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+@mixin for-any-size($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}

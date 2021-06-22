@@ -1,0 +1,48 @@
+@import "variables";
+
+.our-features {
+  @include righArrowSetup(15px, 0px, 0px, -18px);
+}
+
+.our-feature-head {
+  margin-bottom: 150px;
+  margin-top: 130px;
+}
+
+.feature-card {
+  max-width: 316px;
+  max-height: 154px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 14px;
+  display: flex;
+  transition: 0.4s;
+}
+
+.feature-card:hover {
+  background-color: var(--feature-card-hover);
+}
+
+.card-text {
+  line-height: 25px;
+  max-width: 35ch;
+  text-align: left;
+  font-weight: 300;
+}
+
+.card-heading {
+  font-size: 90%;
+  font-weight: 400;
+  padding-bottom: 14px;
+}
+
+.feature-card img {
+  color: #1c1b1b;
+  width: 40px;
+  height: 40px;
+}
+
+.features-templete {
+  flex-wrap: wrap;
+  gap: 30px;
+}
